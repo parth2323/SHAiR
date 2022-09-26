@@ -1,0 +1,13 @@
+import React from "react";
+import { Text, View } from "react-native";
+import styles from "./styles";
+
+const XXXX = (props) => {
+  return (
+    <View>
+      <Text>This is post components. </Text>
+    </View>
+  );
+};
+
+export default XXXX;

@@ -1,0 +1,77 @@
+import React, { useState } from "react";
+import { StyleSheet, Text, View, SafeAreaView, StatusBar } from "react-native";
+
+import HomeScreen from "./src/screens/Home";
+import SearchResultsScreen from "./src/screens/SearchResults";
+import DestinationSearchScreen from "./src/screens/DestinationSearchScreen";
+import Passengers from "./src/screens/Passengers";
+
+import Post from "./src/components/Post";
+import feed from "./assests/data/feed";
+
+//Import ‘react-native-gesture-handler’;
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+
+const post1 = feed[0];
+
+const App: () => React$Node = () => {
+  return (
+    <>
+      <StatusBar barStyle="dark-content" />
+      <SafeAreaView>
+        <HomeScreen />
+        {/* <Post post={post1} /> */}
+        {/* <SearchResultsScreen /> */}
+        {/* <DestinationSearchScreen /> */}
+        {/* <Passengers /> */}
+      </SafeAreaView>
+    </>
+  );
+};
+
+export default App;
+
+
+
+
+
+import React, { useState } from "react";
+import {
+  StyleSheet,
+  Text,
+  View,
+  SafeAreaView,
+  StatusBar,
+  Pressable,
+} from "react-native";
+import Icon from "react-native-ico-material-design";
+
+import HomeScreen from "./src/screens/Home";
+import SearchResultsScreen from "./src/screens/SearchResults";
+import DestinationSearchScreen from "./src/screens/DestinationSearchScreen";
+import SettingsScreen from "./src/screens/SettingsScreen";
+import Passengers from "./src/screens/Passengers";
+
+import Post from "./src/components/Post";
+import feed from "./assests/data/feed";
+
+const App: () => React$Node = () => {
+  return (
+    <>
+      <StatusBar barStyle="dark-content" />
+      <SafeAreaView>
+        <HomeScreen />
+        {/* <Post post={post1} /> */}
+        {/* <SearchResultsScreen /> */}
+        {/* <DestinationSearchScreen /> */}
+        {/* <Passengers /> */}
+        {/* <SettingsScreen /> */}
+      </SafeAreaView>
+    </>
+  );
+};
+
+export default App;
+
+
