@@ -3,6 +3,7 @@ import * as React from "react";
 
 import Icon from "react-native-ico-material-design";
 import MainContainer from "./Navigation/MainContainer";
+import SearchMap from "./Navigation/Screens/SearchMap";
 import DestinationSearchScreen from "./src/screens/DestinationSearchScreen";
 
 import {
@@ -13,7 +14,6 @@ import {
   StatusBar,
   Pressable,
 } from "react-native";
-import Dummy from "./src/components/Post/Dummy.js";
 
 function App() {
   return <MainContainer />;

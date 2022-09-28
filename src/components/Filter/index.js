@@ -6,6 +6,7 @@ import Slider from "@react-native-community/slider";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import Icon from "react-native-ionicons";
 import { DataTable } from "react-native-paper";
+import SearchMap from "../../../Navigation/Screens/SearchMap";
 
 import {
   Table,
@@ -21,12 +22,21 @@ const Filter = (props) => {
   const [sliderValue, setSliderValue] = useState("0"); //Range SLider
   return (
     <View>
-      <Pressable
-        style={styles.buttonColorFilter}
-        onPress={() => console.warn("Explore btn clicked!")}
+      <View
+        style={{
+          marginBottom: 20,
+          zIndex: "1",
+          flexDirection: "row",
+          justifyContent: "center",
+          alignItems: "center",
+          backgroundColor: "#F2F2F2",
+          height: 80,
+          borderRadius: 10,
+        }}
       >
-        <Text style={styles.buttonColorFilterText}>By Car Color</Text>
-      </Pressable>
+        <Text style={{ fontSize: 20, fontWeight: "bold" }}>By Car color: </Text>
+        <SearchMap />
+      </View>
 
       {/* Range Slider */}
       <Pressable

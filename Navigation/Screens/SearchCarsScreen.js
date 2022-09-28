@@ -12,8 +12,11 @@ import {
   TextInput,
 } from "react-native";
 import styles from "./SearchCarsScreenStyles";
-//import RangeSlider, { Slider } from "react-native-range-slider-expo";
 import Slider from "@react-native-community/slider";
+
+import { Ionicons } from "@expo/vector-icons";
+import { NavigationContainer } from "@react-navigation/native";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
 import Post from "../../src/components/Post";
 import Filter from "../../src/components/Filter";
@@ -77,6 +80,7 @@ export default function SettingsScreen({ navigation }) {
 
           <StatusBar style="auto" />
         </View>
+
         <FlatList data={feed} renderItem={({ item }) => <Post post={item} />} />
       </View>
     </View>

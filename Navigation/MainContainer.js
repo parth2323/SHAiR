@@ -25,27 +25,30 @@ function MainContainer() {
     <NavigationContainer>
       <Tab.Navigator
         initialRouteName={homeName}
-        screenOptions={({ route }) => ({
-          tabBarIcon: ({ focused, color, size }) => {
-            let iconName;
-            let rn = route.name;
+        screenOptions={
+          ({ route }) => ({
+            tabBarIcon: ({ focused, color, size }) => {
+              let iconName;
+              let rn = route.name;
 
-            if (rn === homeName) {
-              iconName = focused ? "home" : "home-outline";
-            } else if (rn === detailsName) {
-              iconName = focused ? "car" : "car-outline";
-            } else if (rn === passengers) {
-              iconName = focused ? "body" : "body-outline";
-            } else if (rn === search) {
-              iconName = focused ? "search" : "search-outline";
-            } else if (rn === explore) {
-              iconName = focused ? "map" : "map-outline";
-            }
-
-            // You can return any component that you like here!
-            return <Ionicons name={iconName} size={size} color={color} />;
-          },
-        })}
+              if (rn === homeName) {
+                iconName = focused ? "home" : "home-outline";
+              } else if (rn === detailsName) {
+                iconName = focused ? "car" : "car-outline";
+              } else if (rn === passengers) {
+                iconName = focused ? "body" : "body-outline";
+              } else if (rn === search) {
+                iconName = focused ? "search" : "search-outline";
+              } else if (rn === explore) {
+                iconName = focused ? "map" : "map-outline";
+              }
+              return <Ionicons name={iconName} size={size} color={color} />;
+            },
+          })
+          // ,{
+          //   headerShown: false,
+          // }
+        }
         tabBarOptions={{
           activeTintColor: "black",
           inactiveTintColor: "grey",

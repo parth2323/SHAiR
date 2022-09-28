@@ -164,7 +164,14 @@ export default function PassengerScreen({ navigation }) {
             />
           </View>
         </View>
+        <View></View>
       </View>
+      <Pressable
+        style={styles.searchBtn}
+        onPress={() => navigation.navigate("Car Details")}
+      >
+        <Text style={styles.searchBtnTxt}>Search</Text>
+      </Pressable>
     </View>
   );
 }

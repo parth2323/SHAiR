@@ -34,6 +34,20 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
+  searchBtn: {
+    marginTop: 20,
+    backgroundColor: "gray",
+    alignItems: "center",
+    justifyContent: "center",
+    height: 50,
+    marginHorizontal: 20,
+    borderRadius: 10,
+  },
+  searchBtnTxt: {
+    fontSize: 20,
+    fontWeight: "bold",
+    color: "#FFF",
+  },
 });
 
 export default styles;
