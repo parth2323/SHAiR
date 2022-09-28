@@ -22,7 +22,7 @@ export default function SearchScreen({ navigation }) {
             console.log(data, details);
           }}
           query={{
-            key: "AIzaSyAma1TirTgTA4og-cBAoAuktxhgeSSublU",
+            key: "Please Enter Your API key",
             language: "en",
           }}
         />

@@ -15,24 +15,8 @@ import {
 } from "react-native";
 import Dummy from "./src/components/Post/Dummy.js";
 
-// function App() {
-//   return <MainContainer />;
-// }
-
-const App: () => React$Node = () => {
-  return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <Dummy />
-        {/* <Post post={post1} /> */}
-        {/* <SearchResultsScreen /> */}
-        {/* <DestinationSearchScreen /> */}
-        {/* <Passengers /> */}
-        {/* <SettingsScreen /> */}
-      </SafeAreaView>
-    </>
-  );
-};
+function App() {
+  return <MainContainer />;
+}
 
 export default App;
