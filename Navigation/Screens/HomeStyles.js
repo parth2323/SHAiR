@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
     marginLeft: 25,
     justifyContent: "center",
     alignItems: "center",
+    opacity: 0.7,
   },
   buttonText: {
     fontSize: 20,
@@ -41,6 +42,7 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 50,
     zIndex: 100,
+    opacity: 0.7,
   },
   searchButtonText: {
     fontSize: 20,

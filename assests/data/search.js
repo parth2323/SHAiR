@@ -2,6 +2,7 @@ export default [
   {
     id: "0",
     description: "Ottawa, Ontario",
+    carIcon: "https://img.icons8.com/ios/50/000000/crane.png",
   },
   {
     id: "1",

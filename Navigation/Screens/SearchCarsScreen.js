@@ -16,6 +16,7 @@ import styles from "./SearchCarsScreenStyles";
 import Slider from "@react-native-community/slider";
 
 import Post from "../../src/components/Post";
+import Filter from "../../src/components/Filter";
 import feed from "../../assests/data/feed";
 
 export default function SettingsScreen({ navigation }) {
@@ -23,7 +24,6 @@ export default function SettingsScreen({ navigation }) {
   const [order, setOrder] = useState("ASC");
 
   const [modalVisible, setModalVisible] = React.useState(false); //Modal
-  const [sliderValue, setSliderValue] = useState("0"); //Range SLider
 
   //Sorting Feature
   const sorting = (feed) => {
@@ -69,28 +69,8 @@ export default function SettingsScreen({ navigation }) {
                 title="< Go Back"
                 onPress={() => setModalVisible(false)}
               />
-              <Pressable
-                style={styles.filterBackGround}
-                onPress={() => setModalVisible(false)}
-              >
-                <Text style={styles.buttonText}>
-                  Ranger Slider: {sliderValue} KMs
-                </Text>
-                <View>
-                  <Slider
-                    style={{ width: 350, height: 40 }}
-                    minimumValue={0}
-                    maximumValue={1000}
-                    onValueChange={(value) => setSliderValue(value)}
-                    onSlidingComplete={() => console.log("Sliding complete")}
-                    onSlidingStart={() => console.log("Sliding start")}
-                    step={1}
-                    value={sliderValue}
-                    maximumTrackTintColor="background: linear-gradient(90deg, rgba(0,212,255,1) 35%, rgba(9,9,121,1) 100%);                    "
-                    minimumTrackTintColor="linear-gradient(90deg, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)"
-                  />
-                </View>
-              </Pressable>
+              {/* Filter Screen component */}
+              <Filter />
             </View>
           </Modal>
           <Button title="More Filters" onPress={() => setModalVisible(true)} />

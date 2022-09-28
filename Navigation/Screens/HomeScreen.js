@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, View, ImageBackground, Pressable } from "react-native";
+import { Text, View, ImageBackground, Pressable, Button } from "react-native";
 import styles from "./HomeStyles";
 import Ionicons from "@expo/vector-icons/Ionicons";
 
@@ -12,9 +12,9 @@ export default function MainScreen({ navigation }) {
       >
         <Pressable
           style={styles.searchButton}
-          onPress={() => navigation.navigate("SearchScreen")}
+          onPress={() => navigation.navigate("Search")}
         >
-          <Ionicons name="md-search" size={32} color="black" />
+          <Ionicons name="md-search" size={30} color="black" />
           <Text style={styles.searchButtonText}>Where are you going? </Text>
         </Pressable>
 
@@ -22,7 +22,7 @@ export default function MainScreen({ navigation }) {
 
         <Pressable
           style={styles.button}
-          onPress={() => console.warn("Explore btn clicked!")}
+          onPress={() => navigation.navigate("Explore")}
         >
           <Text style={styles.buttonText}>Find Near By</Text>
         </Pressable>

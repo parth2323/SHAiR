@@ -2,18 +2,21 @@ import * as React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Ionicons from "react-native-vector-icons/Ionicons";
+import Icon from "react-native-ionicons";
 
 // Screens
 import HomeScreen from "./Screens/HomeScreen";
 import SearchCarsScreen from "./Screens/SearchCarsScreen";
 import PassengerScreen from "./Screens/PassengerScreen";
 import SearchScreen from "./Screens/SearchScreen";
+import ExploreScreen from "./Screens/ExploreScreen";
 
 //Screen names
 const homeName = "Home";
 const detailsName = "Car Details";
 const passengers = "Passengers";
 const search = "Search";
+const explore = "Explore";
 
 const Tab = createBottomTabNavigator();
 
@@ -35,6 +38,8 @@ function MainContainer() {
               iconName = focused ? "body" : "body-outline";
             } else if (rn === search) {
               iconName = focused ? "search" : "search-outline";
+            } else if (rn === explore) {
+              iconName = focused ? "map" : "map-outline";
             }
 
             // You can return any component that you like here!
@@ -49,6 +54,7 @@ function MainContainer() {
         }}
       >
         <Tab.Screen name={homeName} component={HomeScreen} />
+        <Tab.Screen name={explore} component={ExploreScreen} />
         <Tab.Screen name={search} component={SearchScreen} />
         <Tab.Screen name={passengers} component={PassengerScreen} />
         <Tab.Screen name={detailsName} component={SearchCarsScreen} />

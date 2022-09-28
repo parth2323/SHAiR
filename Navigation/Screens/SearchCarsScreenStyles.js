@@ -18,7 +18,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     height: 40,
     padding: 10,
-
     borderRadius: 10,
     marginTop: 15,
     marginBottom: 10,
@@ -29,6 +28,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "bold",
   },
+
   buttonRangeSliderText: {
     fontSize: 18,
     fontWeight: "bold",
@@ -38,6 +38,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#F2F2F2",
     padding: 10,
     borderRadius: 10,
+  },
+  buttonRangeText: {
+    fontSize: 22,
+    fontWeight: "bold",
+    marginHorizontal: 11,
   },
 });
 
