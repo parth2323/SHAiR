@@ -76,7 +76,7 @@ export default function SettingsScreen({ navigation }) {
               <Filter />
             </View>
           </Modal>
-          <Button title="More Filters" onPress={() => setModalVisible(true)} />
+          <Button title="More" onPress={() => setModalVisible(true)} />
 
           <StatusBar style="auto" />
         </View>

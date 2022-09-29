@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /Users/parthpatel/.yarn/bin/yarn.js add react-native-dropdown-select-listnpm install react-native-dropdown
+  /usr/local/bin/node /Users/parthpatel/.yarn/bin/yarn.js add @react-navigation/material-top-tabs react-native-tab-review
 
 PATH: 
   /Users/parthpatel/.yarn/bin:/Users/parthpatel/.config/yarn/global/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Users/parthpatel/.yarn/bin:/Users/parthpatel/.config/yarn/global/node_modules/.bin
@@ -14,7 +14,7 @@ Platform:
   darwin arm64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/react-native-dropdown-select-listnpm: Not found
+  Error: https://registry.yarnpkg.com/react-native-tab-review: Not found
       at Request.params.callback [as _callback] (/Users/parthpatel/.yarn/lib/cli.js:66145:18)
       at Request.self.callback (/Users/parthpatel/.yarn/lib/cli.js:140890:22)
       at Request.emit (node:events:527:28)
@@ -49,6 +49,8 @@ npm manifest:
       "ios": "^0.0.1",
       "react": "18.0.0",
       "react-native": "0.69.5",
+      "react-native-dropdown": "^0.0.6",
+      "react-native-dropdown-picker": "^5.4.2",
       "react-native-dropdown-select-list": "^1.0.21",
       "react-native-gesture-handler": "~2.5.0",
       "react-native-google-places-autocomplete": "^2.4.1",
@@ -5636,10 +5638,20 @@ Lockfile:
       jscodeshift "^0.13.1"
       nullthrows "^1.1.1"
   
+  react-native-dropdown-picker@^5.4.2:
+    version "5.4.2"
+    resolved "https://registry.yarnpkg.com/react-native-dropdown-picker/-/react-native-dropdown-picker-5.4.2.tgz#3d17de3d8a84cb8e74a2ffda6be417d287245b81"
+    integrity sha512-cZBPyN+k52jA9XguFnKoF5tLf31z6gjZ8GijO/pfVNSSEtPwZ14UTUrr87JiiOnMh5K/O2kRzZ/jZN8D0MmUMA==
+  
   react-native-dropdown-select-list@^1.0.21:
     version "1.0.21"
     resolved "https://registry.yarnpkg.com/react-native-dropdown-select-list/-/react-native-dropdown-select-list-1.0.21.tgz#e4e3ec26770c38265f80eade16f0de6a82a60b1d"
     integrity sha512-iwpSYJdZQQaLSFh7tGaffMJY/6FGAIlvG0GPoOrT9Hd7+mWjSfm1xarMIHzNBCNhMRimf0eImIeels4T+EijYQ==
+  
+  react-native-dropdown@^0.0.6:
+    version "0.0.6"
+    resolved "https://registry.yarnpkg.com/react-native-dropdown/-/react-native-dropdown-0.0.6.tgz#f4b899b4082c4823340c7377fbe73bc01399148d"
+    integrity sha512-6FmZCcz5nizCEKkQCAICUYrz7/XHrRrRmrWbTk+Bm9eeh5E+C0XNLT48Kxzgi+yjRQQz6uwIkXDF2MLCdTjJsA==
   
   react-native-gesture-handler@~2.5.0:
     version "2.5.0"

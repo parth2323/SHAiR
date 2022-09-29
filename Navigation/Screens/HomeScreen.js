@@ -2,6 +2,7 @@ import React from "react";
 import { Text, View, ImageBackground, Pressable, Button } from "react-native";
 import styles from "./HomeStyles";
 import Ionicons from "@expo/vector-icons/Ionicons";
+import { places } from "../../assests/data/feed";
 
 export default function MainScreen({ navigation }) {
   return (

@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
   },
   searchBtn: {
     marginTop: 20,
-    backgroundColor: "gray",
+    backgroundColor: "black",
     alignItems: "center",
     justifyContent: "center",
     height: 50,

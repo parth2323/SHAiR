@@ -6,7 +6,7 @@ import Slider from "@react-native-community/slider";
 import Ionicons from "react-native-vector-icons/Ionicons";
 import Icon from "react-native-ionicons";
 import { DataTable } from "react-native-paper";
-import SearchMap from "../../../Navigation/Screens/SearchMap";
+import ColorFilter from "./colorFilter";
 
 import {
   Table,
@@ -35,7 +35,7 @@ const Filter = (props) => {
         }}
       >
         <Text style={{ fontSize: 20, fontWeight: "bold" }}>By Car color: </Text>
-        <SearchMap />
+        <ColorFilter />
       </View>
 
       {/* Range Slider */}

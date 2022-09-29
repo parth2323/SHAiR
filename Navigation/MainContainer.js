@@ -10,6 +10,7 @@ import SearchCarsScreen from "./Screens/SearchCarsScreen";
 import PassengerScreen from "./Screens/PassengerScreen";
 import SearchScreen from "./Screens/SearchScreen";
 import ExploreScreen from "./Screens/ExploreScreen";
+import PostScreen from "./Screens/PostScreen";
 
 //Screen names
 const homeName = "Home";
@@ -17,6 +18,7 @@ const detailsName = "Car Details";
 const passengers = "Passengers";
 const search = "Search";
 const explore = "Explore";
+const post = "Post";
 
 const Tab = createBottomTabNavigator();
 
@@ -41,6 +43,8 @@ function MainContainer() {
                 iconName = focused ? "search" : "search-outline";
               } else if (rn === explore) {
                 iconName = focused ? "map" : "map-outline";
+              } else if (rn === post) {
+                iconName = focused ? "apps" : "apps-outline";
               }
               return <Ionicons name={iconName} size={size} color={color} />;
             },
@@ -61,6 +65,7 @@ function MainContainer() {
         <Tab.Screen name={search} component={SearchScreen} />
         <Tab.Screen name={passengers} component={PassengerScreen} />
         <Tab.Screen name={detailsName} component={SearchCarsScreen} />
+        <Tab.Screen name={post} component={PostScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );
