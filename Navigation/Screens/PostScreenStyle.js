@@ -30,12 +30,12 @@ const styles = StyleSheet.create({
   },
   prices: {
     color: "white",
-    marginVertical: 5,
+    marginVertical: 2,
     fontSize: 28,
     borderWidth: 1,
     borderRadius: 10,
     alignSelf: "center",
-    padding: 10,
+    padding: 5,
   },
   oldPrice: {
     fontSize: 20,
@@ -43,10 +43,10 @@ const styles = StyleSheet.create({
     textDecorationLine: "line-through",
   },
   totalPriceTxt: {
-    fontSize: 25,
+    fontSize: 18,
   },
   totalPrice: {
-    width: 170,
+    width: 220,
     fontSize: 18,
     color: "white",
     textDecorationLine: "underline",

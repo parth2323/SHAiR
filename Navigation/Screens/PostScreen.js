@@ -4,6 +4,11 @@ import Post from "../../src/components/Post";
 import { useRoute } from "@react-navigation/native";
 import styles from "./PostScreenStyle";
 
+import { DataTable } from "react-native-paper";
+import Icon from "react-native-vector-icons/FontAwesome";
+import Ionicons from "@expo/vector-icons/Ionicons";
+import { MaterialCommunityIcons, FontAwesome5 } from "@expo/vector-icons";
+
 import places from "../../assests/data/feed";
 
 const PostScreen = ({ navigation }) => {
@@ -45,7 +50,7 @@ const PostScreen = ({ navigation }) => {
         </Text>
 
         <Text style={styles.totalPrice}>
-          <Text style={styles.totalPriceTxt}>Total</Text>{" "}
+          <Text style={styles.totalPriceTxt}>Total </Text>
           <Text style={styles.totalPrice}>{post.price}</Text>
         </Text>
         <View style={styles.carBasics}>
@@ -57,15 +62,32 @@ const PostScreen = ({ navigation }) => {
               fontWeight: "bold",
             }}
           >
-            CAR BASICS:{" "}
+            CAR BASICS:
           </Text>
-          <Text
-            style={{ flexDirection: "row", justifyContent: "space-between" }}
-          >
-            <Text style={styles.carBasicTxt}>5 Seats</Text>
-            <Text style={styles.carBasicTxt}>Gas(Regular)</Text>
-            <Text style={styles.carBasicTxt}>4 Doors</Text>
-          </Text>
+          <DataTable>
+            <DataTable.Row>
+              <DataTable.Cell style={{ padding: 10 }}>
+                <MaterialCommunityIcons
+                  name="car-seat"
+                  size={24}
+                  color="#f96d00"
+                />
+                <Text style={styles.carBasicTxt}> 5 Seats</Text>
+              </DataTable.Cell>
+              <DataTable.Cell>
+                <FontAwesome5 name="gas-pump" size={24} color="#f96d00" />
+                <Text style={styles.carBasicTxt}> Gas(Regular)</Text>
+              </DataTable.Cell>
+              <DataTable.Cell>
+                <MaterialCommunityIcons
+                  name="car-door"
+                  size={24}
+                  color="#f96d00"
+                />
+                <Text style={styles.carBasicTxt}> 4 Doors</Text>
+              </DataTable.Cell>
+            </DataTable.Row>
+          </DataTable>
         </View>
         <Text style={{ color: "white", fontSize: 18 }}>
           {post.LongDescription}

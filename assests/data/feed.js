@@ -32,9 +32,9 @@ export default [
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
     carOwner: "John",
-    car: "Mitsubishi",
-    car_model: "Montero",
-    car_model_year: 2002,
+    car: "Audi",
+    car_model: "A7",
+    car_model_year: 2022,
     carSeats: 5,
     carColor: "White",
     oldPrice: 90,
@@ -53,8 +53,8 @@ export default [
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
     carOwner: "Peter",
-    car: "Mitsubishi",
-    car_model: "Montero",
+    car: "Mazda",
+    car_model: "C3",
     car_model_year: 2002,
     carColor: "Black",
     carSeats: 5,
