@@ -38,7 +38,7 @@ export default function ExploreScreen({ navigation }) {
             newPrice={places.newPrice}
           />
         ))}
-        {/* <Marker coordinate={{ latitude: 28.391537, longitude: -16.6291304 }}>
+        <Marker coordinate={{ latitude: 28.391537, longitude: -16.6291304 }}>
           <View
             style={{
               backgroundColor: "#E9E9E9",
@@ -49,7 +49,7 @@ export default function ExploreScreen({ navigation }) {
           >
             <Text style={{ fontWeight: "bold" }}>$300</Text>
           </View>
-        </Marker> */}
+        </Marker>
       </MapView>
     </View>
   );

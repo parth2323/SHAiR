@@ -3,8 +3,6 @@ import * as React from "react";
 
 import Icon from "react-native-ico-material-design";
 import MainContainer from "./Navigation/MainContainer";
-import SearchMap from "./Navigation/Screens/SearchMap";
-import DestinationSearchScreen from "./src/screens/DestinationSearchScreen";
 
 import {
   StyleSheet,
@@ -18,5 +16,21 @@ import {
 function App() {
   return <MainContainer />;
 }
+
+// const App: () => React$Node = () => {
+//   return (
+//     <>
+//       <StatusBar barStyle="dark-content" />
+//       <SafeAreaView>
+//         <Dummy />
+//         {/* <Post post={post1} /> */}
+//         {/* <SearchResultsScreen /> */}
+//         {/* <DestinationSearchScreen /> */}
+//         {/* <Passengers /> */}
+//         {/* <SettingsScreen /> */}
+//       </SafeAreaView>
+//     </>
+//   );
+// };
 
 export default App;

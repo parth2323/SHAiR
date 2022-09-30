@@ -4,6 +4,10 @@ const styles = StyleSheet.create({
   //   title: {
   //     fontSize: 30,
   //   },
+  container: {
+    margin: 20,
+  },
+
   ageType: {
     fontWeight: "bold",
     fontSize: 16,
@@ -22,7 +26,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     marginHorizontal: 10,
     borderBottomWidth: 1,
-    borderBottomColor: "lightgray",
+    borderBottomColßor: "lightgray",
   },
 
   button: {

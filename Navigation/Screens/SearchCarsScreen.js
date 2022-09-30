@@ -21,6 +21,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Post from "../../src/components/Post";
 import Filter from "../../src/components/Filter";
 import feed from "../../assests/data/feed";
+import carData from "../../assests/data/carData";
 
 export default function SettingsScreen({ navigation }) {
   const [data, setData] = useState(feed);

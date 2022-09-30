@@ -43,6 +43,17 @@ const styles = StyleSheet.create({
     textDecorationLine: "underline",
     marginBottom: 5,
   },
+  searchFilter: {
+    marginTop: 10,
+    width: 180,
+    height: 40,
+    borderWidth: 1,
+    borderColor: "black",
+    marginHorizontal: 10,
+    padding: 10,
+    borderRadius: 10,
+    fontSize: 20,
+  },
 });
 
 export default styles;
