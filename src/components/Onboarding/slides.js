@@ -20,7 +20,7 @@ export default [
   },
   {
     id: "4",
-    image: require("../../../assests/images/South.jpg"),
+    image: require("../../../assests/images/south.jpeg"),
     title: "Explore South",
     description: "Mexican Desets",
   },
