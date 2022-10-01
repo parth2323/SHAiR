@@ -1,12 +1,22 @@
 import React from "react";
-import { Text, View, ImageBackground, Pressable, Button } from "react-native";
+import {
+  Text,
+  View,
+  ImageBackground,
+  StatusBar,
+  SafeAreaView,
+  Pressable,
+  Button,
+  ScrollView,
+} from "react-native";
 import styles from "./HomeStyles";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { places } from "../../assests/data/feed";
+import Onboarding from "../../src/components/Onboarding/Onboarding";
 
 export default function MainScreen({ navigation }) {
   return (
-    <View>
+    <ScrollView>
       <ImageBackground
         source={require("../../assests/images/wallpaper.jpg")}
         style={styles.image}
@@ -28,6 +38,9 @@ export default function MainScreen({ navigation }) {
           <Text style={styles.buttonText}>Find Near By</Text>
         </Pressable>
       </ImageBackground>
-    </View>
+      <SafeAreaView>
+        <Onboarding />
+      </SafeAreaView>
+    </ScrollView>
   );
 }

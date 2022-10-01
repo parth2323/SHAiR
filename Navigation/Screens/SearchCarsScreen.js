@@ -24,41 +24,22 @@ import feed from "../../assests/data/feed";
 import carData from "../../assests/data/carData";
 
 export default function SettingsScreen({ navigation }) {
-  const [data, setData] = useState(feed);
-  const [order, setOrder] = useState("ASC");
-
   const [modalVisible, setModalVisible] = React.useState(false); //Modal
-
-  //Sorting Feature
-  const sorting = (feed) => {
-    if (order === "ASC") {
-      const sorted = [...data].sort((a, b) =>
-        a.carModel.toLowerCase() > b.carModel.toLowerCase() ? 1 : -1
-      );
-      setData(sorted);
-      setOrder("DSC");
-    }
-
-    if (order === "DSC") {
-      const sorted = [...data].sort((a, b) =>
-        a.carModel.toLowerCase() < b.carModel.toLowerCase() ? 1 : -1
-      );
-      setData(sorted);
-      setOrder("ASC");
-    }
-  };
 
   return (
     <View>
       <View>
         <View style={styles.row}>
-          <Pressable style={styles.button} onPress={() => sorting("carModel")}>
+          <Pressable
+            style={styles.button}
+            onPress={() => console.warn("By Car Name btn clicked!")}
+          >
             <Text style={styles.buttonText}>By Car Name</Text>
           </Pressable>
 
           <Pressable
             style={styles.button}
-            onPress={() => console.warn("Explore btn clicked!")}
+            onPress={() => console.warn("By Make Year btn clicked!")}
           >
             <Text style={styles.buttonText}>By Make Year</Text>
           </Pressable>

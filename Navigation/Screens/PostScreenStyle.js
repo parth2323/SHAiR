@@ -51,6 +51,7 @@ const styles = StyleSheet.create({
     color: "white",
     textDecorationLine: "underline",
     margin: 5,
+    marginHorizontal: 10,
     borderWidth: 1,
     borderRadius: 10,
     alignSelf: "center",
