@@ -12,9 +12,11 @@ const OnboardingItem = ({ item }) => {
 
   return (
     <View>
-      <View style={{ backgroundColor: "white" }}>
+      <View style={{ flex: 0.2 }}>
         <Text style={styles.title}>{item.title}</Text>
         <Text style={styles.description}>{item.description}</Text>
+      </View>
+      <View style={[styles.container, { width }]}>
         <Image
           source={item.image}
           style={[styles.image, { width, resizeMode: "contain" }]}
@@ -31,12 +33,14 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
   },
   image: {
+    flex: 0.8,
     justifyContent: "center",
+    height: 286,
   },
   title: {
     fontSize: 28,
     fontWeight: "800",
-    // marginBottom: 10,
+    marginBottom: 10,
     color: "#493d8a",
     textAlign: "center",
   },

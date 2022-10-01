@@ -16,7 +16,7 @@ import Onboarding from "../../src/components/Onboarding/Onboarding";
 
 export default function MainScreen({ navigation }) {
   return (
-    <ScrollView>
+    <ScrollView style={{ backgroundColor: "#FFF" }}>
       <ImageBackground
         source={require("../../assests/images/wallpaper.jpg")}
         style={styles.image}
@@ -38,9 +38,8 @@ export default function MainScreen({ navigation }) {
           <Text style={styles.buttonText}>Find Near By</Text>
         </Pressable>
       </ImageBackground>
-      <SafeAreaView>
-        <Onboarding />
-      </SafeAreaView>
+
+      <Onboarding />
     </ScrollView>
   );
 }
