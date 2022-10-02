@@ -4,6 +4,7 @@ import React, { useState, useRef } from "react";
 import slides from "./slides";
 import OnboardingItem from "./OnboardingItem";
 import Paginator from "./Paginator";
+import NextButton from "./NextButton";
 
 const Onboarding = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -24,7 +25,7 @@ const Onboarding = () => {
           data={slides}
           renderItem={({ item }) => <OnboardingItem item={item} />}
           horizontal
-          showsHorizontalScrollIndicator
+          showsHorizontalScrollIndicator={false}
           pagingEnabled
           bounch={false}
           keyExtractor={(item) => item.id}
@@ -41,6 +42,7 @@ const Onboarding = () => {
         />
       </View>
       <Paginator data={slides} scrollX={scrollX} />
+      <NextButton />
     </View>
   );
 };

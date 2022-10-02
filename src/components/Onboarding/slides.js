@@ -10,7 +10,7 @@ export default [
     id: "2",
     image: require("../../../assests/images/East.jpg"),
     title: "Explore East",
-    description: "Atlantic Oceans",
+    description: "Atlantic Ocean",
   },
   {
     id: "3",
@@ -22,6 +22,6 @@ export default [
     id: "4",
     image: require("../../../assests/images/south.jpeg"),
     title: "Explore South",
-    description: "Mexican Desets",
+    description: "Mexican Deserts",
   },
 ];

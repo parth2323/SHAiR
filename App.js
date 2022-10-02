@@ -1,6 +1,7 @@
 import * as React from "react";
 import HomeScreen from "./src/screens/Home";
 import Onboarding from "./src/components/Onboarding/Onboarding";
+import Sorting from "./src/components/Sorting";
 
 import Icon from "react-native-ico-material-design";
 import MainContainer from "./Navigation/MainContainer";
@@ -24,7 +25,7 @@ const App: () => React$Node = () => {
       <MainContainer />
       {/* <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <Onboarding />
+        <Sorting />
       </SafeAreaView> */}
     </>
   );
