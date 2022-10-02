@@ -13,6 +13,7 @@ import styles from "./HomeStyles";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { places } from "../../assests/data/feed";
 import Onboarding from "../../src/components/Onboarding/Onboarding";
+import FloatingButton from "../../src/components/FloatingButton/FloatingButton";
 
 export default function MainScreen({ navigation }) {
   return (
@@ -38,7 +39,7 @@ export default function MainScreen({ navigation }) {
           <Text style={styles.buttonText}>Find Near By</Text>
         </Pressable>
       </ImageBackground>
-
+      <FloatingButton />
       <Onboarding />
     </ScrollView>
   );

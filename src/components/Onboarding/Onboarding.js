@@ -4,7 +4,6 @@ import React, { useState, useRef } from "react";
 import slides from "./slides";
 import OnboardingItem from "./OnboardingItem";
 import Paginator from "./Paginator";
-import NextButton from "./NextButton";
 
 const Onboarding = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -42,14 +41,11 @@ const Onboarding = () => {
         />
       </View>
       <Paginator data={slides} scrollX={scrollX} />
-      <NextButton />
     </View>
   );
 };
 
 export default Onboarding;
-
-//Everything was on Onboarding Item screen, not on this one...
 
 const styles = StyleSheet.create({
   container: {

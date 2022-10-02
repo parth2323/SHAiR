@@ -9,6 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
     "@react-native-community/masked-view": "^0.1.11",
     "@react-native-community/slider": "4.2.3",
     "@react-navigation/bottom-tabs": "^6.4.0",
