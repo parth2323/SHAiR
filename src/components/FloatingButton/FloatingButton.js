@@ -28,7 +28,7 @@ export default class FloatingButton extends React.Component {
         {
           translateY: this.animation.interpolate({
             inputRange: [0, 1],
-            outputRange: [0, -80],
+            outputRange: [0, -90],
           }),
         },
       ],
@@ -74,7 +74,7 @@ export default class FloatingButton extends React.Component {
           <Animated.View style={[styles.button, styles.secondary, carStyle]}>
             <Ionicons name="location-outline" size={30} color="#F02A4B" />
             <Text style={{ color: "#F02A4B", fontWeight: "bold" }}>
-              Choose Destination
+              Choose Location
             </Text>
           </Animated.View>
         </TouchableWithoutFeedback>
@@ -83,7 +83,7 @@ export default class FloatingButton extends React.Component {
           <Animated.View style={[styles.button, styles.secondary, dateStyle]}>
             <Fontisto name="date" size={30} color="#F02A4B" />
             <Text style={{ color: "#F02A4B", fontWeight: "bold" }}>
-              Choose Destination
+              Choose Date
             </Text>
           </Animated.View>
         </TouchableWithoutFeedback>
@@ -110,7 +110,7 @@ export default class FloatingButton extends React.Component {
 const styles = StyleSheet.create({
   container: {
     alignItems: "center",
-    marginVertical: 88,
+    marginVertical: 94,
   },
   button: {
     position: "absolute",
@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
   },
   secondary: {
     width: 150,
-    height: 60,
+    height: 70,
     borderRadius: 15,
     backgroundColor: "#FFF",
   },

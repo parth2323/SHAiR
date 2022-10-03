@@ -17,7 +17,7 @@ import FloatingButton from "../../src/components/FloatingButton/FloatingButton";
 
 export default function MainScreen({ navigation }) {
   return (
-    <ScrollView style={{ backgroundColor: "#FFF" }}>
+    <ScrollView style={{ backgroundColor: "#31087B" }}>
       <ImageBackground
         source={require("../../assests/images/wallpaper.jpg")}
         style={styles.image}

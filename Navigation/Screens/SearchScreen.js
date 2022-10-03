@@ -1,3 +1,5 @@
+//LINE:30 :- Add your own API key..
+
 import React from "react";
 import {
   StyleSheet,
@@ -25,7 +27,7 @@ export default function SearchScreen({ navigation }) {
             navigation.navigate("Passengers");
           }}
           query={{
-            key: "AIzaSyAma1TirTgTA4og-cBAoAuktxhgeSSublU",
+            key: " ENTER AN API KEY",
             language: "en",
           }}
         />

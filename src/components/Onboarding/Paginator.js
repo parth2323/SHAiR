@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
     height: 5,
     borderRadius: 5,
-    backgroundColor: "#493d8a",
+    backgroundColor: "#FFF",
     marginHorizontal: 5,
   },
 });
