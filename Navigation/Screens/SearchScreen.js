@@ -1,4 +1,5 @@
 //LINE:30 :- Add your own API key..
+//Use this link to get your Google API key: https://support.google.com/googleapi/answer/6158862?hl=en
 
 import React from "react";
 import {
